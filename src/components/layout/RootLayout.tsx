@@ -9,6 +9,7 @@ import { MenuIcon } from '../icons/collection/MenuIcon'
 import { Cross } from '../icons/collection/Cross'
 import { Container } from '../shared/container'
 import { Footer } from '../navigation/Footer'
+import Link from 'next/link'
 
 export function Layout({ children }: { children: React.ReactNode }) {
   let pathname = usePathname()
@@ -98,15 +99,33 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
-                  <div>
-                    <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
-                    </h2>
-                  </div>
+                  <Link href="/blog">
+                    <div>
+                      <h2 className="font-display text-base font-semibold text-white">
+                        Blog
+                      </h2>
+                    </div>
+                  </Link>
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
+                    <Link href={'/ceo'}>
                     <h2 className="font-display text-base font-semibold text-white">
-                      Follow us
+                      Meet the CEO
                     </h2>
+                    </Link>
+                  </div>
+                  <Link href="/about">
+                    <div>
+                      <h2 className="font-display text-base font-semibold text-white">
+                        About
+                      </h2>
+                    </div>
+                  </Link>
+                  <div className="sm:border-l sm:border-transparent sm:pl-16">
+                    <Link href={'/ceo'}>
+                    <h2 className="font-display text-base font-semibold text-white">
+                      Meet the CEO
+                    </h2>
+                    </Link>
                   </div>
                 </div>
               </Container>
@@ -131,7 +150,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           />
 
           <main className="w-full flex-auto">{children}</main>
-          <Footer/>
+          <Footer />
         </motion.div>
       </motion.div>
     </MotionConfig>
