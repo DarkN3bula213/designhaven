@@ -4,11 +4,11 @@ import { List, ListItem } from "../shared/List/List";
 import { Container } from "../shared/container";
 import { StylizedImage } from "../styledImage/StyledImage";
 
-export function Content() {
+export function Services() {
     return (
       <>
         <SectionIntro
-          eyebrow="Our Team"
+          eyebrow="Services"
           title="We help you identify, explore and respond to new opportunities."
           className="mt-24 sm:mt-32 lg:mt-40"
         >
@@ -19,10 +19,23 @@ export function Content() {
         </SectionIntro>
         <Container className="mt-16">
           <div className="lg:flex lg:items-center lg:justify-end">
-           
+            <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
+              <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
+                <StylizedImage
+                                src={'/laptop.jpeg'}
+                                alt='..'
+                                height={500}
+                                width={500}
+                  sizes="(min-width: 1024px) 41rem, 31rem"
+                  className="justify-center lg:justify-end"
+                />
+              </FadeIn>
+            </div>
             <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-              <ListItem title="Full-time designer">
-              Quos sunt ad dolore ullam qui. Enim et quisquam dicta molestias. Corrupti quo voluptatum eligendi autem labore.
+              <ListItem title="Web development">
+                We specialise in crafting beautiful, high quality marketing pages.
+                The rest of the website will be a shell that uses lorem ipsum
+                everywhere.
               </ListItem>
               <ListItem title="Application development">
                 We have a team of skilled developers who are experts in the latest
@@ -39,18 +52,6 @@ export function Content() {
                 of a single, enormous Joomla instance.
               </ListItem>
             </List>
-            <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-              <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
-                <StylizedImage
-                                src={'/meeting.jpeg'}
-                                alt='..'
-                                height={500}
-                                width={500}
-                  sizes="(min-width: 1024px) 41rem, 31rem"
-                  className="justify-center lg:justify-end"
-                />
-              </FadeIn>
-            </div>
           </div>
         </Container>
       </>

@@ -1,5 +1,6 @@
 import Navbar from '@/components/navigation/Navbar'
 import { Content } from '@/components/sections/Content'
+import { Services } from '@/components/sections/Services'
 import Pricing from '@/components/sections/pricing'
 import { FadeIn, FadeInStagger } from '@/components/shared/FadeIn'
 import InfiniteScroll from '@/components/shared/InfiniteScroll'
@@ -208,6 +209,7 @@ export default function Home() {
         <FadeIn>
           <Content />
         </FadeIn>
+        <Services/>
       </main>
     </>
   )
