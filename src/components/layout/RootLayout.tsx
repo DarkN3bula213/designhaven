@@ -121,9 +121,9 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
                     </div>
                   </Link>
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
-                    <Link href={'/ceo'}>
+                    <Link href={'/shop'}>
                     <h2 className="font-display text-base font-semibold text-white">
-                      Meet the CEO
+                      Shop
                     </h2>
                     </Link>
                   </div>

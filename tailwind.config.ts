@@ -112,8 +112,9 @@ const config: Config = {
     bounce: "240ms ease 0s 1 running bounce",
   },
   plugins: [
-    // ...
     require('@tailwindcss/forms'),
+      require('@tailwindcss/typography'),
+      require('@tailwindcss/aspect-ratio'),
   ],
 }
 export default config
