@@ -13,11 +13,11 @@ export const perks = [
     {
       name: 'All year discount',
       imageUrl: 'https://tailwindui.com/img/ecommerce/icons/icon-gift-card-light.svg',
-      description: 'Looking for a deal? You can use the code "ALLYEAR" at checkout and get money off all year round.',
+      description: 'Looking for a deal? You can use the code "ALL YEAR" at checkout and get money off all year round.',
     },
     {
       name: 'For the planet',
       imageUrl: 'https://tailwindui.com/img/ecommerce/icons/icon-planet-light.svg',
-      description: 'We’ve pledged 1% of sales to the preservation and restoration of the natural environment.',
+      description: 'We ve pledged 1% of sales to the preservation and restoration of the natural environment.',
     },
   ]

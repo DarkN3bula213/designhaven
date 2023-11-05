@@ -97,14 +97,14 @@ const InfiniteScroll = () => {
             <path pathLength="1" d="M538 777L538 128"></path>
           </svg>
 
-          <img
+          {/* <img
             className={clsx(
               'relative z-10 transition-opacity delay-[680ms]',
               inView ? 'opacity-[5%]' : 'opacity-0',
             )}
             src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
             alt="Hero image"
-          />
+          /> */}
         </div>
       </div>
     </>
